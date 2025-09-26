@@ -1,9 +1,6 @@
-cmake_source: /Users/pp/Documents/Repos/quincy
-
-repo:
-  url: "https://github.com/PhillipPapastefanou/QPy.git"
-  branch: "application/atto_summerschool"
-  clone_dir: "QPy"
+quincy_source:
+  gdrive_id: "1RHJXqEIPGSvEZWUy2wkIFul3eGXhPNeq"
+  local_dir: "quincy"
 
 data:
   gdrive_url: "https://drive.google.com/drive/folders/1WCaI9e6jUUmfpc-Q2aSdms15qEqOopFQ"
