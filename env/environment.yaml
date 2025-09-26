@@ -1,0 +1,34 @@
+name: myproject
+channels:
+  - conda-forge
+#channel_priority: strict   
+dependencies:
+  # Core Python + MPI bindings
+  - python=3.10
+  - mpi4py
+  - openmpi    # MPI implementation (both Python + Fortran will use this)
+  - xarray
+
+  # Build tools
+  - cmake
+  - make
+
+  # NetCDF Fortran + Python bindings
+  - netcdf-fortran
+  - netcdf4
+
+  # OS-specific compilers
+  # - gfortran_linux-64
+  # - gfortran_osx-arm64
+  # - gfortran_osx-64
+  # - gfortran_win-64
+  - gfortran
+
+  # To get data from the google drive
+  - gdown
+
+  # For QPy
+  - gitpython
+  - numpy 
+  - pandas
+  - matplotlib

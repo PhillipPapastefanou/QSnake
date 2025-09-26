@@ -1,0 +1,4 @@
+[submodule "QPy"]
+	path = QPy
+	url = https://github.com/PhillipPapastefanou/QPy.git
+	branch = feature/atto_summer_phyd
