@@ -117,19 +117,17 @@ rule get_data:
         """
 
 rule get_source:
-    output: directory(QUNCY_SRC_DIR)
-    conda: "env/environment.yaml"
-    shell:
-        """
-        tmpzip=$(mktemp /tmp/sourceXXXX.zip)
-        gdown --id {QUNCY_SRC_ID} -O $tmpzip
-        rm -rf {output}
-        mkdir -p {output}
-        unzip -q $tmpzip -d {output}_tmp
-        mv {output}_tmp/*/* {output}/ || mv {output}_tmp/* {output}/
-        rm -rf {output}_tmp
-        rm -f $tmpzip
-        """
+    output:
+        directory(QUNCY_SRC_DIR)
+    conda:
+        "env/environment.yaml"
+    log:
+        "logs/get_source.log"
+    params:
+        gdrive_id=QUNCY_SRC_ID
+    script:
+        "scripts/get_source.py"
+
 
 rule record_python:
     input: "env/.installed"
@@ -168,7 +166,7 @@ rule test_python_script:
     shell:
         """
         mkdir -p results/python_test_imgs
-        $CONDA_PREFIX/bin/python -u QPy/science/atto_excercises/00_run_static_quincy.py
+        $CONDA_PREFIX/bin/python -u QPy/science/atto_excercises/loc_00_run_static_quincy.py
         test $(ls results/python_test_imgs/*.pdf | wc -l) -gt 0
         """
 
