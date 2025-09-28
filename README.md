@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # QSnake
 
 QSnake is a Snakemake-based workflow for building and running the **Quincy** model together with Python tooling from the **QPy** submodule.  
@@ -90,15 +89,3 @@ This runs a minimal Fortran compilation and Python checks.
 ## 📜 License
 
 See [LICENSE.md](LICENSE.md) for details.
-=======
-# General setup
-
-First run:
-git clone https://github.com/PhillipPapastefanou/QSnake
-
-then make sure that the QPy submodule is being pulled and up to date:
-git submodule update --init --recursive
-
-Finally, run the build script:  
-snakemake --use-conda --cores 2 --latency-wait 10
->>>>>>> b6e9a0a3ba7f3795e6f7ac485ffc9dbbdb1251bc
