@@ -1,0 +1,4 @@
+[INFO] Downloading Google Drive file ID=1RHJXqEIPGSvEZWUy2wkIFul3eGXhPNeq
+[INFO] Downloaded to /var/folders/9r/97b9zk_j4ys8v5lnksc4l4j00000gq/T/tmpq6wiyvd0/source.zip, size=2667382 bytes
+[INFO] Extracted contents: ['compile_quincy_tcd.sh', 'LICENSE.md', 'AUTHORS.md', 'CmakeLists.txt', 'cmake', 'quincy', 'contrib', 'README', 'README.md', '__MACOSX', 'COPYING', 'scripts', 'doc', 'build', 'compile_quincy.sh', 'data', 'contrib_tcd', 'src']
+[INFO] Final contents of quincy: ['compile_quincy_tcd.sh', 'LICENSE.md', 'AUTHORS.md', 'CmakeLists.txt', 'cmake', 'quincy', 'contrib', 'README', 'README.md', '__MACOSX', 'COPYING', 'scripts', 'doc', 'build', 'compile_quincy.sh', 'data', 'contrib_tcd', 'src']
